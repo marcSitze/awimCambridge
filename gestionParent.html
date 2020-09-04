@@ -127,7 +127,8 @@
                              </div>
                              <div class="col-md-6 text-right">
                                 <span><button class="btn bg-info text-light"><span class="mr-2" style="background: #25648f; padding: 5px 10px; margin: 0; margin: -10px;"><i class="fa fa-file"></i></span>imprimer les QR Code</button></span>
-                                <span><button type="button" class="btn bg-success text-light" data-toggle="modal" data-target="#exampleModal"><span class="mr-2" style="background: #108b73; padding: 5px 10px; margin: 0; margin: -10px;"><i class="fa fa-plus"></i></span>ajouter parent</button>
+                                <span><button type="button" class="btn bg-success text-light" data-toggle="modal" data-target="#modalparent"><span class="mr-2" style="background: #108b73; padding: 5px 10px; margin: 0; margin: -10px;"><i class="fa fa-plus"></i></span>ajouter parent</button>
+                                <span><button type="button" class="btn bg-success text-light" data-toggle="modal" data-target="#modalsubstitut"><span class="mr-2" style="background: #108b73; padding: 5px 10px; margin: 0; margin: -10px;"><i class="fa fa-plus"></i></span>ajouter substitut parent</button>
                              </div>
                         </div>
                     </div>
@@ -205,12 +206,12 @@
                     </div>
                   </div>
 
-                  <!-- Popup form -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <!-- Modal parent-->
+<div class="modal fade" id="modalparent" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Ajouter Utilisateurs</h5>
+        <h5 class="modal-title" id="exampleModalLabel">Ajouter Parent</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -287,78 +288,6 @@
                 </div>
               </div>
           </div>
-          <hr style="width: 470px;">
-          <h2>Substitute 1</h2>
-          <div class="row">
-            <div class="col-md-6">
-                <div class="form-group">
-                    <label for="recipient-name" class="col-form-label">Noms<span style="color: red;">*</span></label>
-                    <input type="text" class="form-control" id="recipient-name">
-                  </div>
-            </div>
-            <div class="col-md-6">
-                <div class="form-group">
-                    <label for="recipient-name" class="col-form-label">Prenoms<span style="color: red;">*</span></label>
-                    <input type="text" class="form-control" id="recipient-name">
-                  </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-6">
-                <div class="form-group">
-                    <label for="recipient-name" class="col-form-label">Telephone<span style="color: red;">*</span></label>
-                    <input type="text" class="form-control" id="recipient-name">
-                  </div>
-            </div>
-            <div class="col-md-6">
-                <div class="form-group">
-                    <label for="recipient-name" class="col-form-label">Nombres d'enfants<span style="color: red;">*</span></label>
-                    <input type="text" class="form-control" id="recipient-name">
-                  </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-10">
-                <div class="form-group">
-                    <label for="recipient-name" class="col-form-label">Telephone<span style="color: red;">*</span></label>
-                    <input type="text" class="form-control" id="recipient-name">
-                  </div>
-            </div>
-            <div class="col-md-2">
-                <div class="form-group">
-                    <label for="recipient-name" class="col-form-label">N<span style="color: red;">*</span></label>
-                    <input type="text" class="form-control" id="recipient-name">
-                  </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-6">
-                <div class="form-group">
-                    <label for="recipient-name" class="col-form-label">Profession<span style="color: red;">*</span></label>
-                    <input type="text" class="form-control" id="recipient-name">
-                  </div>
-            </div>
-            <div class="col-md-6">
-                <div class="form-group">
-                    <label for="recipient-name" class="col-form-label">Adresse<span style="color: red;">*</span></label>
-                    <input type="text" class="form-control" id="recipient-name">
-                  </div>
-            </div>
-        </div>
-      
-      <div class="row">
-          <div class="col-md-12">
-            <div class="input-group mb-3">
-              <div class="custom-file">
-                <input type="file" class="custom-file-input" id="inputGroupFile02">
-                <label class="custom-file-label" for="inputGroupFile02" aria-describedby="inputGroupFileAddon02">Choose file</label>
-              </div>
-              <div class="input-group-append">
-                <span class="input-group-text" id="inputGroupFileAddon02"><i class="fa fa-camera"></i></span>
-              </div>
-            </div>
-          </div>
-      </div>
         </form>
       </div>
       <div class="modal-footer">
@@ -368,6 +297,99 @@
     </div>
   </div>
 </div>
+<!-- Modal parent end -->
+      <!-- Modal parent substitut -->
+      <div class="modal fade" id="modalsubstitut" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Ajouter Substitut Parent</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form>
+                  <div class="row">
+                      <div class="col-md-6">
+                          <div class="form-group">
+                              <label for="recipient-name" class="col-form-label">Noms<span style="color: red;">*</span></label>
+                              <input type="text" class="form-control" id="recipient-name">
+                            </div>
+                      </div>
+                      <div class="col-md-6">
+                          <div class="form-group">
+                              <label for="recipient-name" class="col-form-label">Prenoms<span style="color: red;">*</span></label>
+                              <input type="text" class="form-control" id="recipient-name">
+                            </div>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-md-6">
+                          <div class="form-group">
+                              <label for="recipient-name" class="col-form-label">Telephone<span style="color: red;">*</span></label>
+                              <input type="text" class="form-control" id="recipient-name">
+                            </div>
+                      </div>
+                      <div class="col-md-6">
+                          <div class="form-group">
+                              <label for="recipient-name" class="col-form-label">Nombres d'enfants<span style="color: red;">*</span></label>
+                              <input type="text" class="form-control" id="recipient-name">
+                            </div>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-md-10">
+                          <div class="form-group">
+                              <label for="recipient-name" class="col-form-label">Telephone<span style="color: red;">*</span></label>
+                              <input type="text" class="form-control" id="recipient-name">
+                            </div>
+                      </div>
+                      <div class="col-md-2">
+                          <div class="form-group">
+                              <label for="recipient-name" class="col-form-label">N<span style="color: red;">*</span></label>
+                              <input type="text" class="form-control" id="recipient-name">
+                            </div>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-md-6">
+                          <div class="form-group">
+                              <label for="recipient-name" class="col-form-label">Profession<span style="color: red;">*</span></label>
+                              <input type="text" class="form-control" id="recipient-name">
+                            </div>
+                      </div>
+                      <div class="col-md-6">
+                          <div class="form-group">
+                              <label for="recipient-name" class="col-form-label">Adresse<span style="color: red;">*</span></label>
+                              <input type="text" class="form-control" id="recipient-name">
+                            </div>
+                      </div>
+                  </div>
+                
+                <div class="row">
+                    <div class="col-md-12">
+                      <div class="input-group mb-3">
+                        <div class="custom-file">
+                          <input type="file" class="custom-file-input" id="inputGroupFile02">
+                          <label class="custom-file-label" for="inputGroupFile02" aria-describedby="inputGroupFileAddon02">Choose file</label>
+                        </div>
+                        <div class="input-group-append">
+                          <span class="input-group-text" id="inputGroupFileAddon02"><i class="fa fa-camera"></i></span>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Annuler</button>
+              <button type="button" class="btn btn-info">Ajouter</button>
+            </div>
+          </div>
+        </div>
+      </div>
 
                   <!-- Table end -->
                   <footer class="offset-md-1 col-md-11 bg-secondary">
