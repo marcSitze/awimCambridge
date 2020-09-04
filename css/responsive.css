@@ -6,14 +6,18 @@
 /* Large Devices (Desktops & Laptops) */
 
 @media (min-width: 1200px) and (max-width: 1299px) {
-
+    .card-img, .card-img-top, .card-img-bottom {
+        width: 50%;
+    }
 }
 
 
 /* Medium Devices (Landscape Tablets & Medium Desktops) */
 
 @media (min-width: 992px) and (max-width: 1199px) {
-
+    .card-img, .card-img-top, .card-img-bottom {
+        width: 50%;
+    }
 }
 
 
@@ -22,6 +26,9 @@
 @media (min-width: 768px) and (max-width: 991px) {
     #idparent_banner h1{
         font-size: 25px;
+    }
+    .card-img, .card-img-top, .card-img-bottom {
+        width: 50%;
     }
 }
 
@@ -39,7 +46,10 @@
 /* Extra Small Devices (Portrait Phones & Smaller Devices) */
 
 @media (max-width: 480px) {
-
+    .form-parent img{
+        width: 100px;
+        height: 100px;
+    }
 }
 
 
@@ -47,7 +57,15 @@
 
 @media (max-width: 320px) {
     #idparent_banner h1{
-        font-size: 15px;
+        font-size: 12px;
         padding: 5px;
+    }
+    .form-parent img{
+        width: 100px;
+        height: 100px;
+    }
+    .form-parent {
+        width: 100px;
+        height: 100px;
     }
 }
