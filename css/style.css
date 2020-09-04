@@ -1,7 +1,13 @@
+/*=================================== 
+  Color Codes
+  main color: #040466
+======================================*/
+
 html,
 body {
   /* height: 100%; */
   font-size: .875rem;
+  overflow-x: hidden;
 }
 /* body {
     font-size: .875rem;
@@ -137,7 +143,7 @@ body {
 ==============================*/
 /* Accueil elements */
 .card-1{
-    border-left: 3px solid rgb(4, 4, 102);
+    border-left: 3px solid #040466;
 }
 .card-2{
     border-left: 3px solid rgb(4, 102, 71);

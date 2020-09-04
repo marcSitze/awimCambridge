@@ -127,7 +127,7 @@
                              </div>
                              <div class="col-md-6 text-right">
                                 <span><button class="btn bg-info text-light"><span class="mr-2" style="background: #25648f; padding: 5px 10px; margin: 0; margin: -10px;"><i class="fa fa-file"></i></span>imprimer les QR Code</button></span>
-                                <span><button type="button" class="btn bg-success text-light" data-toggle="modal" data-target="#exampleModal"><span class="mr-2" style="background: #108b73; padding: 5px 10px; margin: 0; margin: -10px;"><i class="fa fa-plus"></i></span>ajouter élèves</button>
+                                <span><button type="button" class="btn bg-success text-light" data-toggle="modal" data-target="#modaleleve"><span class="mr-2" style="background: #108b73; padding: 5px 10px; margin: 0; margin: -10px;"><i class="fa fa-plus"></i></span>ajouter élève</button>
                              </div>
                         </div>
                     </div>
@@ -149,8 +149,10 @@
                               <tr>
                                 <th scope="col">Noms</th>
                                 <th scope="col">Prenoms</th>
-                                <th scope="col">Telephone</th>
-                                <th scope="col">Nombre d'enfants</th>
+                                <th scope="col">Sexe</th>
+                                <th scope="col">Classe</th>
+                                <th scope="col">Parent</th>
+                                <th scope="col">Telephone Parent</th>
                                 <th scope="col">action</th>
                               </tr>
                             </thead>
@@ -158,27 +160,34 @@
                               <tr>
                                 <td scope="row">Marion</td>
                                 <td>Santana</td>
-                                <td>Otto</td>
-                                <td>@mdo</td>
+                                <td>Masculin</td>
+                                <td>Form 2</td>
+                                <td>Parent</td>
+                                <td>6985585</td>
                                 <td>
                                     <button class="btn btn-sm btn-info"><i class="fa fa-external-link"></i></button>
                                     <button class="btn btn-sm btn-danger"><i class="fa fa-trash"></i></button>
                                 </td>
                               </tr>
                               <tr>
-                                <td scope="row">Sadio</td>
-                                <td>Jacob</td>
-                                <td>Thornton</td>
-                                <td>@fat</td>
+                                <td scope="row">Marion</td>
+                                <td>Santana</td>
+                                <td>Masculin</td>
+                                <td>Form 2</td>
+                                <td>Parent</td>
+                                <td>6985585</td>
                                 <td>
                                     <button class="btn btn-sm btn-info"><i class="fa fa-external-link"></i></button>
                                     <button class="btn btn-sm btn-danger"><i class="fa fa-trash"></i></button>
                                 </td>
                               </tr>
                               <tr>
-                                <td scope="row">Wayne</td>
-                                <td colspan="2">Larry the Bird</td>
-                                <td>@twitter</td>
+                                <td scope="row">Marion</td>
+                                <td>Santana</td>
+                                <td>Masculin</td>
+                                <td>Form 2</td>
+                                <td>Parent</td>
+                                <td>6985585</td>
                                 <td>
                                     <button class="btn btn-sm btn-info"><i class="fa fa-external-link"></i></button>
                                     <button class="btn btn-sm btn-danger"><i class="fa fa-trash"></i></button>
@@ -204,6 +213,124 @@
                           </nav>
                     </div>
                   </div>
+
+  <!-- Modal Eleve-->
+  <div class="modal fade" id="modaleleve" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Ajouter élève</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+              <div class="row">
+                  <div class="col-md-6">
+                      <div class="form-group">
+                          <label for="recipient-name" class="col-form-label">Noms<span style="color: red;">*</span></label>
+                          <input type="text" class="form-control" id="recipient-name">
+                        </div>
+                  </div>
+                  <div class="col-md-6">
+                      <div class="form-group">
+                          <label for="recipient-name" class="col-form-label">Prenoms<span style="color: red;">*</span></label>
+                          <input type="text" class="form-control" id="recipient-name">
+                        </div>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-md-6">
+                      <div class="form-group">
+                          <label for="recipient-name" class="col-form-label">Sexe<span style="color: red;">*</span></label>
+                          <input type="text" class="form-control" id="recipient-name">
+                        </div>
+                  </div>
+                  <div class="col-md-6">
+                      <div class="form-group">
+                          <label for="recipient-name" class="col-form-label">Age<span style="color: red;">*</span></label>
+                          <input type="text" class="form-control" id="recipient-name">
+                        </div>
+                  </div>
+              </div>
+              <!-- <div class="row">
+                  <div class="col-md-10">
+                      <div class="form-group">
+                          <label for="recipient-name" class="col-form-label">Telephone<span style="color: red;">*</span></label>
+                          <input type="text" class="form-control" id="recipient-name">
+                        </div>
+                  </div>
+                  <div class="col-md-2">
+                      <div class="form-group">
+                          <label for="recipient-name" class="col-form-label">N<span style="color: red;">*</span></label>
+                          <input type="text" class="form-control" id="recipient-name">
+                        </div>
+                  </div>
+              </div> -->
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                      <label for="recipient-name" class="col-form-label">Matricule<span style="color: red;">*</span></label>
+                      <input type="text" class="form-control" id="recipient-name">
+                    </div>
+              </div>
+                  <div class="col-md-6">
+                      <div class="form-group">
+                          <label for="recipient-name" class="col-form-label">Classe<span style="color: red;">*</span></label>
+                          <input type="text" class="form-control" id="recipient-name">
+                        </div>
+                  </div>
+              </div>
+            
+            <!-- <div class="row">
+                <div class="col-md-12">
+                  <div class="input-group mb-3">
+                    <div class="custom-file">
+                      <input type="file" class="custom-file-input" id="inputGroupFile02">
+                      <label class="custom-file-label" for="inputGroupFile02" aria-describedby="inputGroupFileAddon02">Choose file</label>
+                    </div>
+                    <div class="input-group-append">
+                      <span class="input-group-text" id="inputGroupFileAddon02"><i class="fa fa-camera"></i></span>
+                    </div>
+                  </div>
+                </div>
+            </div> -->
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                    <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Role</label>
+                    <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+                      <option selected>Choisir...</option>
+                      <option value="Admin">Parent 1</option>
+                      <option value="Secretaire">Parent 2</option>
+                      <!-- <option value="3">Three</option> -->
+                    </select>
+                  </div>
+              </div>
+              <div class="col-md-6">
+                <div class="input-group" style="margin-top: 28px;">
+                  <div class="custom-file">
+                    <input type="file" class="custom-file-input" id="inputGroupFile02">
+                    <label class="custom-file-label" for="inputGroupFile02" aria-describedby="inputGroupFileAddon02">Choose file</label>
+                  </div>
+                  <div class="input-group-append">
+                    <span class="input-group-text" id="inputGroupFileAddon02"><i class="fa fa-camera"></i></span>
+                  </div>
+                </div>
+              </div>
+          </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Annuler</button>
+          <button type="button" class="btn btn-info">Ajouter</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal Eleve end -->
+
                   <!-- Table end -->
                   <footer class="offset-md-1 col-md-11 bg-secondary">
                       <div class="text-center bg-secondary">
